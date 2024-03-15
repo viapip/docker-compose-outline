@@ -346,7 +346,7 @@ services:
   echo "${DOCKER_COMPOSE_TEMPLATE}" > "./docker-compose.yml"
   sudo ln -s "${SHADOWBOX_DIR}" "${data_dir}"
   echo "Starting Shadowbox using Docker Compose..."
-  docker-compose -f "${compose_file}" up -d shadowbox
+  docker-compose -f "${compose_file}" up -d
 }
 
 function check_and_remove_item() {
