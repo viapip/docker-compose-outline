@@ -70,6 +70,8 @@ git clone -b server-v1.8.1 --depth 1 https://github.com/Jigsaw-Code/outline-serv
      ```sh
      npm run action shadowbox/docker/build
      ```
+     An image will be created ```localhost/outline/shadowbox```
+
 
 
 Based on https://github.com/Jigsaw-Code/outline-server
