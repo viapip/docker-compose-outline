@@ -2,9 +2,14 @@
 
 This repository contains a Bash script for installing the Outline Server and a Watchtower container to keep it updated. The Outline Server uses Shadowsocks for creating a secure VPN.
 
-## Prerequisites
+### Important Note on Docker Compose
 
-**Prerequisites**
+This installation script (`install_server.sh`) is customized to generate a Docker Compose file (`docker-compose.yml`) for managing the Outline Server and Watchtower containers. This approach simplifies updates and management but might introduce complexities if you're planning extensive customizations or modifications to the Docker setup. 
+
+**If the creation of a Docker Compose file is not necessary for your use case, or if you prefer a more straightforward deployment without it, consider using the Outline Server [source code](https://github.com/Jigsaw-Code/outline-server/blob/master/src/shadowbox/README.md) directly for your customizations.** This direct approach gives you full control over the Docker commands and configurations, making it better suited for advanced customizations or when integrating Outline Server into an existing Docker environment.
+
+
+## Prerequisites
 
 - [Docker](https://docs.docker.com/engine/install/)
 - [Node](https://nodejs.org/en/download/) LTS (`lts/hydrogen`, version `18.16.0`) // [NVM](https://github.com/nvm-sh/nvm)
