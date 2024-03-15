@@ -21,8 +21,6 @@ This installation script (`install_server.sh`) is customized to generate a Docke
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/viapip/docker-compose-outline/master/install.sh)"
 ```
 
-
-
 You can customize the installation with environment variables or by editing the script directly. Some of the configurable options include:
 
 - `SB_IMAGE`: Specify the Docker image for the Outline Server (default `quay.io/outline/shadowbox:nightly`).
@@ -33,6 +31,7 @@ You can customize the installation with environment variables or by editing the 
 - `SENTRY_LOG_FILE`: File for logs that may be reported to Sentry in case of an install error. Should not contain personally identifiable information.
 - `WATCHTOWER_REFRESH_SECONDS`: Interval in seconds for Watchtower to check for updates (default 3600).
 
+
 ## Script Options
 
 The script supports several flags:
@@ -41,6 +40,8 @@ The script supports several flags:
 - `--api-port <port>`: Port number for the management API.
 - `--keys-port <port>`: Port number for access keys.
 
+## Remote with Outline Manager
+https://getoutline.org/get-started/
 
 ## Security Considerations
 
