@@ -4,14 +4,19 @@ This repository contains a Bash script for installing the Outline Server and a W
 
 ## Prerequisites
 
-- A Linux server with `curl` and `docker` installed.
-- Root access or a user with sudo privileges.
+**Prerequisites**
+
+- [Docker](https://docs.docker.com/engine/install/)
+- [Node](https://nodejs.org/en/download/) LTS (`lts/hydrogen`, version `18.16.0`)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (version `9.5.1`)
 
 ## Installation
 
 ``` bash 
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/viapip/docker-compose-outline/master/install.sh)"
 ```
+
+
 
 You can customize the installation with environment variables or by editing the script directly. Some of the configurable options include:
 
@@ -44,7 +49,22 @@ For detailed logs, refer to the `SENTRY_LOG_FILE` specified during installation 
 
 ## Building a Custom Outline Server Image
 
-If you wish to customize the Outline Server or contribute to its development, you can build your own Docker image from the [source code](https://github.com/Jigsaw-Code/outline-server) .
+If you wish to customize the Outline Server or contribute to its development, you can build your own Docker image from the [source code](https://github.com/Jigsaw-Code/outline-server/blob/master/src/shadowbox/README.md) .
+1. **Clone stable version:**
+``` bash
+git clone -b server-v1.8.1 --depth 1 https://github.com/Jigsaw-Code/outline-server.git && cd outline-server
+   ```
+   - **Help**
+
+     ```sh
+     npm install
+     npm run action:help
+     ```
+-  **Build:**
+   
+     ```sh
+     npm run action shadowbox/docker/build
+     ```
 
 
 Based on https://github.com/Jigsaw-Code/outline-server
