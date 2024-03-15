@@ -7,7 +7,7 @@ This repository contains a Bash script for installing the Outline Server and a W
 **Prerequisites**
 
 - [Docker](https://docs.docker.com/engine/install/)
-- [Node](https://nodejs.org/en/download/) LTS (`lts/hydrogen`, version `18.16.0`) or use [NVM](https://github.com/nvm-sh/nvm)
+- [Node](https://nodejs.org/en/download/) LTS (`lts/hydrogen`, version `18.16.0`) // [NVM](https://github.com/nvm-sh/nvm)
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (version `9.5.1`)
 
 ## Installation
