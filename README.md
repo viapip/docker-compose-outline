@@ -12,6 +12,8 @@ This installation script (`install_server.sh`) is customized to generate a Docke
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/engine/install/)
+
+**Building a Custom Image:**
 - [Node](https://nodejs.org/en/download/) LTS (`lts/hydrogen`, version `18.16.0`) // [NVM](https://github.com/nvm-sh/nvm)
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (version `9.5.1`)
 
